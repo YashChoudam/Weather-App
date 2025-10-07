@@ -1,0 +1,27 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A simple weather app that shows real-time weather info for any city. Enter the city name to get temperature, humidity, wind speed, and conditions using live data from a weather API. Clean UI, responsive design, and fast performance for quick forecasts.",
+  "homepage": "https://github.com/YashChoudam/Weather-App#readme",
+  "bugs": {
+    "url": "https://github.com/YashChoudam/Weather-App/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YashChoudam/Weather-App.git"
+  },
+  "license": "ISC",
+  "author": "YASH",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
+    "prettier": "^3.6.2"
+  }
+}

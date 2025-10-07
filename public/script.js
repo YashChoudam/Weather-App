@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let descriptionDisplay = document.getElementById("description");
   let errorMessage = document.getElementById("error-message");
 
-  let API_KEY = process.env.API_KEY ;
+  // let API_KEY = process.env.API_KEY ;
 
   getWeatherBtn.addEventListener("click", async () => {
     let city = cityInput.value.trim();
@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   async function fetchWeatherData(city) {
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
+    let url = `http://localhost:3000/weather?city=${city}`;
+
 
     let response = await fetch(url);
     console.log(typeof response);

@@ -12,10 +12,11 @@
   },
   "license": "ISC",
   "author": "YASH",
-  "type": "commonjs",
+  "type": "module",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon weather-server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",

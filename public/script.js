@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   async function fetchWeatherData(city) {
-    let url = `http://localhost:3000/weather?city=${city}`;
+    let url = `https://weather-app-d4uw.onrender.com/weather?city=${city}`;
     let response = await fetch(url);
     if (!response.ok) {
       throw new Error("City not found");
